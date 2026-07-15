@@ -10,6 +10,12 @@ import {
   SiDocker,
 } from "react-icons/si";
 
+import {
+  FaNetworkWired,
+  FaPlug,
+  FaCode,
+} from "react-icons/fa";
+
 export const technologies = {
   react: {
     id: "react",
@@ -63,5 +69,22 @@ export const technologies = {
     id: "docker",
     name: "Docker",
     icon: SiDocker,
+  },
+  soap: {
+    id: "soap",
+    name: "SOAP",
+    icon: FaCode,
+  },
+
+  tcpip: {
+    id: "tcpip",
+    name: "TCP/IP",
+    icon: FaNetworkWired,
+  },
+
+  rs232: {
+    id: "rs232",
+    name: "RS-232",
+    icon: FaPlug,
   },
 } as const;
