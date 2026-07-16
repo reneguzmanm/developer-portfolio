@@ -1,25 +1,19 @@
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Hero from "./sections/Hero";
-import ConstructionBanner from "./components/common/ConstructionBanner";
-import About from "./sections/About";
-import Experience from "./sections/Experience";
+import { Route, Routes } from "react-router";
+import Home from "./views/Home";
+import IndustrialWeighing from "./views/IndustrialWeighing";
 
 function App() {
   return (
-    <>
-      <ConstructionBanner />
-      <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
 
-      <main>
-        
-        <Hero />
-        <About />
-        <Experience />
-      </main>
+      <Route
+        path="/case-studies/industrial-weighing"
+        element={<IndustrialWeighing />}
+      />
 
-      <Footer />
-    </>
+      <Route path="*" element={<Home />} />
+    </Routes>
   );
 }
 
