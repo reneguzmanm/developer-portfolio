@@ -9,4 +9,6 @@ export interface Project {
   technologies: Technology[];
   status: "public" | "private";
   githubUrl?: string;
+  role: string;
+  projectType: string;
 }

@@ -17,6 +17,11 @@ export const projects: Project[] = [
       technologies.tcpip,
       technologies.rs232,
     ],
+    role: "Desarrollo completo del software",
+
+    projectType: "Proyecto empresarial",
+
     status: "private",
   },
+  
 ];
