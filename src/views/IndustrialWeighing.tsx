@@ -3,6 +3,8 @@ import IndustrialWeighingMockup from "../components/case-study/IndustrialWeighin
 import Container from "../components/layout/Container";
 import { projects } from "../data/projects";
 import ProjectOverview from "../components/case-study/ProjectOverview";
+import Workflow from "../components/case-study/Workflow";
+import EngineeringDecisions from "../components/case-study/EngineeringDecisions";
 
 const project = projects.find(
   (currentProject) => currentProject.slug === "industrial-weighing",
@@ -18,7 +20,8 @@ const IndustrialWeighing = () => {
           solution="Desarrollé una aplicación en Python que integraba servicios SOAP, una balanza conectada por comunicación serial, PostgreSQL y un aplicador de etiquetas por TCP/IP. La solución validaba los datos, calculaba la fecha de vencimiento, generaba el código QR y registraba cada operación."
         />
         <IndustrialWeighingMockup />
-        <IndustrialWeighingMockup />
+        <Workflow project={project} />
+        <EngineeringDecisions project={project} />
       </Container>
     </main>
   );

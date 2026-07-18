@@ -187,7 +187,7 @@ const IndustrialWeighingMockup = () => {
               <div className="mt-4 grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs uppercase tracking-wide text-slate-500">
-                    Unidades
+                    Cant. Piezas
                   </p>
                   <p className="mt-1 text-xl font-semibold text-white">128</p>
                 </div>
@@ -220,7 +220,7 @@ const IndustrialWeighingMockup = () => {
             </div>
 
             <p className="mt-4 text-center text-xs leading-5 text-slate-500">
-              Al finalizar, la aplicación consolidaba las unidades y los kilos,
+              Al finalizar, la aplicación consolidaba las piezas y los kilos,
               enviaba el resumen al ERP por SOAP y limpiaba la interfaz para el
               siguiente producto.
             </p>
