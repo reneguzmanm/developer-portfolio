@@ -5,6 +5,8 @@ import { projects } from "../data/projects";
 import ProjectOverview from "../components/case-study/ProjectOverview";
 import Workflow from "../components/case-study/Workflow";
 import EngineeringDecisions from "../components/case-study/EngineeringDecisions";
+import ProjectParticipation from "../components/case-study/ProjectParticipation";
+import ProjectTechnologies from "../components/case-study/ProjectTechnologies";
 
 const project = projects.find(
   (currentProject) => currentProject.slug === "industrial-weighing",
@@ -22,6 +24,8 @@ const IndustrialWeighing = () => {
         <IndustrialWeighingMockup />
         <Workflow project={project} />
         <EngineeringDecisions project={project} />
+        <ProjectParticipation />
+        <ProjectTechnologies />
       </Container>
     </main>
   );

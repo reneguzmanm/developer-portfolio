@@ -15,61 +15,52 @@ Construir un portafolio que demuestre mi experiencia resolviendo problemas de in
 - [x] Mockup
 - [x] Flujo de la solución
 - [x] Decisiones de ingeniería
-- [ ] Mi aporte
-- [ ] Tecnologías utilizadas
+- [x] Mi participación
+- [x] Tecnologías utilizadas
 - [ ] Responsive
 - [ ] Revisión final de textos
+- [ ] Build sin errores
 
 ---
 
 ## Próximo caso de estudio
 
-Sistema de etiquetado (Django + React)
+Sistema de etiquetado con Django y React.
 
 ---
 
 ## Backlog
 
+### Refactorización
+
+- [ ] Crear archivos de barril (`index.ts`) para los componentes.
+- [ ] Revisar la nomenclatura de los componentes.
+- [ ] Ordenar la estructura de carpetas.
+- [ ] Revisar y simplificar los imports.
+
 ### Caso de estudio: Sistema automatizado de pesaje y etiquetado industrial
 
-- [ ] Arquitectura del sistema.
-- [ ] Diagrama interactivo.
-- [ ] Fotografías del montaje.
-- [ ] Video demostrativo.
-- [ ] Timeline del proyecto.
-- [ ] Métricas del proyecto.
+- [ ] Agregar la arquitectura del sistema.
+- [ ] Crear un diagrama interactivo.
+- [ ] Incorporar fotografías del montaje.
+- [ ] Incorporar un video demostrativo.
+- [ ] Mostrar una línea de tiempo del proyecto.
+- [ ] Incorporar métricas del proyecto.
 
 ### Portafolio
 
-- [ ] Versión en inglés.
-- [ ] SEO.
-- [ ] Open Graph.
-- [ ] Buscador de proyectos.
-- [ ] Filtros por tecnología.
-- [ ] Animaciones sutiles.
+- [ ] Crear una versión en inglés.
+- [ ] Mejorar el SEO.
+- [ ] Configurar Open Graph.
+- [ ] Agregar un buscador de proyectos.
+- [ ] Agregar filtros por tecnología.
+- [ ] Incorporar animaciones sutiles.
 
 ---
 
 ## Ideas
 
-- [ ] Mostrar conexiones RS-232 y TCP/IP de forma interactiva.
+- [ ] Mostrar las conexiones RS-232 y TCP/IP de forma interactiva.
 - [ ] Mostrar fragmentos de código representativos.
-- [ ] Comparativa "Antes / Después".
-- [ ] Línea de tiempo profesional.
-
----
-
-## Definition of Done
-
-Un caso de estudio se considera terminado cuando cumple con los siguientes criterios:
-
-- [ ] Hero.
-- [ ] Contexto del proyecto.
-- [ ] Mockup.
-- [ ] Flujo de la solución.
-- [ ] Mi aporte.
-- [ ] Decisiones de ingeniería.
-- [ ] Tecnologías utilizadas.
-- [ ] Responsive.
-- [ ] Build sin errores.
-- [ ] Revisión final de textos.
+- [ ] Agregar una comparativa de antes y después.
+- [ ] Crear una línea de tiempo profesional.
