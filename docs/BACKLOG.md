@@ -17,9 +17,9 @@ Construir un portafolio que demuestre mi experiencia resolviendo problemas de in
 - [x] Decisiones de ingeniería
 - [x] Mi participación
 - [x] Tecnologías utilizadas
-- [ ] Responsive
-- [ ] Revisión final de textos
-- [ ] Build sin errores
+- [x] Responsive
+- [x] Revisión final de textos
+- [x] Build sin errores
 
 ---
 
