@@ -5,6 +5,7 @@ import Navbar from "../components/layout/Navbar";
 import About from "../sections/About";
 import Experience from "../sections/Experience";
 import Hero from "../sections/Hero";
+import Contact from "../components/common/Contact";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </main>
 
       <Footer />
