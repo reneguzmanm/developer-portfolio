@@ -30,7 +30,31 @@ export interface Project {
 
   engineeringDecisions: EngineeringDecision[];
 
+  participation: ProjectParticipation;
+
   status: "public" | "private";
 
   githubUrl?: string;
+
+  technologyDetails: ProjectTechnologyDetails;
+}
+
+export interface ProjectContribution {
+  title: string;
+  description: string;
+}
+
+export interface ProjectParticipation {
+  summary: string;
+  contributions: ProjectContribution[];
+}
+
+export interface ProjectTechnologyCategory {
+  title: string;
+  technologies: string[];
+  description: string;
+}
+
+export interface ProjectTechnologyDetails {
+  categories: ProjectTechnologyCategory[];
 }

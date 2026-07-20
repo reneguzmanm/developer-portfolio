@@ -1,10 +1,14 @@
 interface ProjectOverviewProps {
+  challengeTitle: string;
   challenge: string;
+  solutionTitle: string;
   solution: string;
 }
 
 const ProjectOverview = ({
+  challengeTitle,
   challenge,
+  solutionTitle,
   solution,
 }: ProjectOverviewProps) => {
   return (
@@ -15,7 +19,7 @@ const ProjectOverview = ({
         </p>
 
         <h2 className="mt-3 text-3xl font-bold text-white">
-          Integrar una línea de producción con los sistemas del cliente.
+          {challengeTitle}
         </h2>
 
         <p className="mt-5 leading-8 text-slate-400">
@@ -29,7 +33,7 @@ const ProjectOverview = ({
         </p>
 
         <h2 className="mt-3 text-3xl font-bold text-white">
-          Una aplicación central para coordinar todo el proceso.
+          {solutionTitle}
         </h2>
 
         <p className="mt-5 leading-8 text-slate-400">

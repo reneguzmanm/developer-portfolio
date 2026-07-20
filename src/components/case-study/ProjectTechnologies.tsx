@@ -1,40 +1,12 @@
-const categories = [
-  {
-    title: "Aplicación",
-    technologies: ["Python", "Tkinter"],
-    description:
-      "Aplicación de escritorio, lógica de negocio y módulos de administración.",
-  },
-  {
-    title: "Integraciones",
-    technologies: ["SOAP", "RS-232", "TCP/IP"],
-    description:
-      "Comunicación con el ERP, la balanza dinámica y el aplicador automático de etiquetas.",
-  },
-  {
-    title: "Persistencia",
-    technologies: ["PostgreSQL"],
-    description:
-      "Almacenamiento local para consolidación, reimpresión y trazabilidad.",
-  },
-  {
-    title: "Hardware",
-    technologies: [
-      "Balanza dinámica Minebea",
-      "Aplicador automático de etiquetas FoxJet",
-    ],
-    description:
-      "Integración con una balanza dinámica Minebea y un aplicador automático de etiquetas FoxJet, adaptándose a la infraestructura existente de la línea de producción.",
-  },
-  {
-    title: "Herramientas de desarrollo",
-    technologies: ["Labelary"],
-    description:
-      "Vista previa de etiquetas ZPL durante la configuración.",
-  },
-];
+import type { Project } from "../../types/project";
 
-const ProjectTechnologies = () => {
+interface Props {
+  project: Project;
+}
+
+const ProjectTechnologies = ({ project }: Props) => {
+  const { categories } = project.technologyDetails;
+
   return (
     <section className="mt-20">
       <p className="text-sm font-medium text-blue-400">
@@ -55,7 +27,7 @@ const ProjectTechnologies = () => {
               {category.title}
             </h3>
 
-            <p className="mt-3 text-slate-200 font-medium">
+            <p className="mt-3 font-medium text-slate-200">
               {category.technologies.join(" • ")}
             </p>
 
