@@ -239,6 +239,12 @@ export const projects: Project[] = [
         tags: ["Validación de datos", "Reglas de negocio"],
       },
       {
+        title: "Actualización del conteo por trabajador",
+        description:
+          "Cuando una caja válida era capturada, la aplicación incrementaba el contador de los trabajadores asociados y mostraba en amarillo la cantidad pendiente de validación central. Una vez confirmada por la central, el conteo quedaba en verde.",
+        tags: ["Feedback en tiempo real", "Validación central"],
+      },
+      {
         title: "Persistencia local",
         description:
           "Los registros válidos se almacenaban localmente para mantener la operación incluso ante problemas de conectividad.",
@@ -289,6 +295,16 @@ export const projects: Project[] = [
         result:
           "La sincronización pudo reintentarse sin generar registros duplicados.",
       },
+
+      {
+        title: "Conteo visible por trabajador",
+        problem:
+          "Los registros de producción se utilizaban para medir productividad y apoyar el cálculo de remuneraciones variables, pero los trabajadores no tenían una forma inmediata de comprobar que cada caja hubiera sido registrada.",
+        decision:
+          "Mostrar a cada trabajador en su propia fila y actualizar su contador en tiempo real cada vez que una caja válida era asociada a ese trabajador. Mientras la caja esperaba confirmación de la central, el conteo se mostraba en amarillo con la cantidad pendiente por comprobar; una vez validada, quedaba en verde.",
+        result:
+          "Cada trabajador pudo verificar directamente que su producción estaba siendo registrada, lo que facilitó la detección temprana de lecturas fallidas y ayudó a recuperar la confianza en el sistema.",
+      },
     ],
 
 
@@ -319,6 +335,11 @@ export const projects: Project[] = [
             "Implementé la clasificación de etiquetas mediante prefijos y la reconstrucción temporal de cada caja antes de almacenarla.",
         },
         {
+          title: "Diseño de feedback operacional",
+          description:
+            "Diseñé el conteo individual por trabajador para que cada operario pudiera comprobar en tiempo real que sus cajas estaban siendo registradas y distinguir las lecturas pendientes de validación central de las ya confirmadas.",
+        },
+        {
           title: "Sincronización de datos",
           description:
             "Desarrollé el proceso en segundo plano encargado de sincronizar los registros locales con la base de datos central y controlar posibles duplicados.",
@@ -332,3 +353,8 @@ export const projects: Project[] = [
     },
   },
 ];
+
+export const getProjectBySlug = (
+  slug: string,
+): Project | undefined =>
+  projects.find((project) => project.slug === slug);
