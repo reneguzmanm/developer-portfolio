@@ -39,7 +39,9 @@ const Hero = () => {
               </a>
 
               <a
-                href="/cv.pdf"
+                href="/CV_Rene_Guzman_Portafolio.pdf"
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-lg border border-slate-700 px-6 py-3 font-medium text-slate-300 transition hover:border-slate-500"
               >
                 Descargar CV
